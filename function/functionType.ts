@@ -1,5 +1,7 @@
 let sayHello = function (name: string, firstName: string, age:number): string{
- return "Hello "+ name.toLocaleUpperCase() + " " + firstName + " " + "vous avez "+ age + " ans"
+    //interpolation lineaire
+    return `Hello ${name} ${firstName} vous avez ${age} ans`
+ //return  "Hello "+ name.toLocaleUpperCase() + " " + firstName + " " + "vous avez "+ age + " ans"
 }
 let p1 = sayHello("Djissi","Reine", 22)
 console.log(p1);
