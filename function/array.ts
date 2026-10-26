@@ -17,13 +17,3 @@ console.log(list);
 let list2:(string | number)[];
 list2=["yess",0];
 
-//union type
-function add(a: number | string, b: number | string) : string | number {
-    if (typeof a === 'number' && typeof b === 'number') {
-        return a + b;
-    }
-    if (typeof a === 'string' && typeof b === 'string') {
-        return a.concat(b);
-    }
-    throw new Error('Parameters must be numbers or strings');
-}
